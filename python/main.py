@@ -16,13 +16,13 @@ def main():
     print('Bubble sort (descending)')
     print('========================')
     start = time.time()
-    Camera.bubble_sort_by_memory_size_descending(objects)
+    objects = Camera.bubble_sort_by_memory_size_descending(objects)
     end = time.time() - start
     print("Time spent: " + str(end))
     print("Number of comparisons: " + str(Camera.bubble_sort_comparison_counter))
     print("Number of swaps: " + str(Camera.bubble_sort_swap_counter))
     print('========================')
-    [print(object) for object in objects]
+    [print(object_to_show) for object_to_show in objects]
 
     print()
 
@@ -30,7 +30,7 @@ def main():
     print('Merge sort (ascending)')
     print('======================')
     start = time.time()
-    Camera.merge_sort_zoom_ascending(objects)
+    objects = Camera.merge_sort_zoom_ascending(objects)
     end = time.time() - start
     print("Time spent: " + str(end))
     print("Number of comparisons: " + str(Camera.merge_sort_comparison_counter))
