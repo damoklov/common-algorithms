@@ -51,6 +51,7 @@ class Camera:
                     objects[complete_list_counter] = right_part[right_part_iterator]
                     right_part_iterator += 1
                 complete_list_counter += 1
+
             Camera.merge_sort_comparison_counter += 2
 
             while left_part_iterator < len(left_part):
@@ -60,7 +61,7 @@ class Camera:
                 complete_list_counter += 1
 
             while right_part_iterator < len(right_part):
-                Camera.merge_sort_comparison_counter += 2
+                Camera.merge_sort_comparison_counter += 1
                 objects[complete_list_counter] = right_part[right_part_iterator]
                 right_part_iterator += 1
                 complete_list_counter += 1
