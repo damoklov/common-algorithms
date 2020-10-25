@@ -1,4 +1,5 @@
 import time
+import pprint
 from camera import Camera
 
 
@@ -36,8 +37,7 @@ def main():
     print("Number of comparisons: " + str(Camera.merge_sort_comparison_counter))
     print("Number of swaps: " + str(Camera.merge_sort_swap_counter))
     print('======================')
-
-    [print(object) for object in objects]
+    [print(object_to_show) for object_to_show in objects]
 
 
 if __name__ == '__main__':
